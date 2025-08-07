@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Xtramarine – Report Startup</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --clr-accent:#10b981;        /* verrà sovrascritto via JS */
+  --radius:1rem;
+}
+body{margin:0;font-family:'Inter',sans-serif;background:#f8fafc;color:#1f2937;}
+.container{max-width:800px;margin:2rem auto;padding:0 1rem;}
+.card{background:#fff;border-radius:var(--radius);padding:1.5rem;box-shadow:0 6px 18px rgba(0,0,0,.06);margin-bottom:1.5rem;}
+.bar{height:10px;width:100%;background:#e5e7eb;border-radius:9999px;overflow:hidden;}
+.fill{height:100%;background:var(--clr-accent);}
+.progress-item{display:flex;align-items:center;gap:1rem;margin-top:.75rem;}
+.progress-item label{flex:0 0 220px;font-weight:500;color:#64748b;}
+.badge{background:var(--clr-accent);color:#fff;padding:0.25rem 0.75rem;border-radius:9999px;font-weight:600;display:inline-block;margin-top:.5rem;}
+.swot-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;}
+.swot-box{background:#f1f5f9;border-radius:var(--radius);padding:1rem .9rem;}
+.timeline{display:flex;flex-direction:column;gap:1rem;}
+.phase{display:flex;gap:.75rem;align-items:flex-start;}
+.phase-dot{width:12px;height:12px;background:var(--clr-accent);border-radius:50%;margin-top:5px;flex-shrink:0;}
+.phase-content{font-size:.95rem;}
+table{width:100%;border-collapse:collapse;}
+th,td{padding:.5rem .75rem;border:1px solid #e5e7eb;font-size:.85rem;}
+th{background:#f1f5f9;text-align:left;}
+.download-section{text-align:center;margin-top:2rem;}
+.download-btn{background:var(--clr-accent);color:#fff;border:none;padding:.75rem 1.5rem;border-radius:9999px;font-weight:600;cursor:pointer;}
+.page-break{page-break-before:always;}
+@media print{.download-section{display:none;}}
+</style>
+
+<script>
+/* accent-color e download PDF */
+(function(){
+  const irl = 7;
+  const palette = ['#6B7280','#94A3B8','#60A5FA','#3B82F6','#34D399','#10B981','#14B8A6','#8B5CF6','#7C3AED'];
+  document.documentElement.style.setProperty('--clr-accent', palette[irl-1]||'#3B82F6');
+})();
+function downloadPDF(){window.print();}
+</script>
+</head>
+
+<body>
+<div class="container">
+
+  <!-- LOGO -->
+  <div style="text-align:center;margin-bottom:1.25rem;">
+    <img src="https://giusdeveloper.github.io/Reports_BAC/assets/logo bac.png" alt="Business Angels Club" style="height:200px;object-fit:contain;">
+  </div>
+
+  <!-- HERO -->
+  <div class="card">
+    <h1>Xtramarine</h1>
+    <div class="bar"><div class="fill" style="width:69%"></div></div>
+    <p style="font-weight:600;margin-top:.3rem;">69/100 – IRL 7</p>
+    <span class="badge">Growth</span>
+    <p style="margin-top:1rem;">Startup con team di founder esperti e con exit pregressa, che propone un natante gonfiabile elettrico innovativo, validato da feedback positivi ma con traction iniziale e margini da migliorare.</p>
+  </div>
+
+  <!-- SCORE BREAKDOWN -->
+  <div class="card">
+    <h2>Ripartizione Punteggi</h2>
+    <div class="progress-item">
+    <label>Team e Coesione</label>
+    <div class="bar"><div class="fill" style="width:90%"></div></div>
+    <span style="font-weight:600;margin-left:.5rem;">9/10</span>
+  </div><div class="progress-item">
+    <label>Problem-Solution Fit</label>
+    <div class="bar"><div class="fill" style="width:90%"></div></div>
+    <span style="font-weight:600;margin-left:.5rem;">9/10</span>
+  </div><div class="progress-item">
+    <label>Product-Market Fit</label>
+    <div class="bar"><div class="fill" style="width:90%"></div></div>
+    <span style="font-weight:600;margin-left:.5rem;">9/10</span>
+  </div><div class="progress-item">
+    <label>Traction</label>
+    <div class="bar"><div class="fill" style="width:30%"></div></div>
+    <span style="font-weight:600;margin-left:.5rem;">3/10</span>
+  </div><div class="progress-item">
+    <label>Scalabilità</label>
+    <div class="bar"><div class="fill" style="width:30%"></div></div>
+    <span style="font-weight:600;margin-left:.5rem;">3/10</span>
+  </div>
+  </div>
+
+  <!-- SYNTHESIS -->
+  <div class="card">
+    <h2>Analisi di sintesi</h2>
+    <p>Xtramarine rappresenta una startup con un team consolidato e con una solida esperienza imprenditoriale, capace di presentare un prodotto davvero innovativo nel settore nautico. La proposta di offrire un natante gonfiabile a propulsione elettrica, facilmente trasportabile e con design brevettato, si pone come risposta concreta a problematiche tradizionali di rimessaggio e logistica. La validazione di mercato è stata ottenuta attraverso feedback positivi e un NPS estremamente elevato, che indicano un buon riscontro tra i primi utilizzatori. Tuttavia, la traction attuale evidenzia un fatturato ancora contenuto e margini operativi limitati, motivo per cui l’azienda necessita di ulteriori investimenti e strategie mirate per accelerare la crescita. La roadmap strategica comprende il potenziamento delle attività di marketing e la revisione dei processi interni per migliorare la scalabilità, mentre le proiezioni finanziarie puntano a un incremento costante della base clienti e del fatturato. In un contesto competitivo, l’unicità del design e la mancanza di concorrenti diretti rappresentano un fattore di opportunità, sebbene rimanga il rischio di imitazioni e l’incertezza nella crescita della domanda. L’obiettivo è di consolidare il posizionamento e aumentare la redditività per passare a fasi successive di sviluppo e ampliamento del mercato.</p>
+  </div>
+
+  <!-- SWOT -->
+  <div class="card">
+    <h2>SWOT</h2>
+    <div class="swot-grid">
+      <div class="swot-box"><strong>Strengths</strong><br>Team con exit, design innovativo e assenza di concorrenti diretti.</div>
+      <div class="swot-box"><strong>Weaknesses</strong><br>Traction limitata e marginalità modeste da migliorare.</div>
+      <div class="swot-box"><strong>Opportunities</strong><br>Espansione nel mercato nautico e alta fidelizzazione clienti.</div>
+      <div class="swot-box"><strong>Threats</strong><br>Rischio di competitor imitativi e incertezza nella domanda.</div>
+    </div>
+  </div>
+
+  <!-- ANNEX A -->
+  <div class="card page-break">
+    <h2>Allegato A – Tabella punteggi dettagliata</h2>
+    <table>
+  <thead>
+    <tr><th>#</th><th>Criterio</th><th>Peso</th><th>Punteggio</th><th>Commento</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>1</td>
+        <td>Team e Coesione</td>
+        <td>15%</td>
+        <td>9/10</td>
+        <td style="font-size:.8rem;">Team forte con co-founder esperti e serial founder, supportato da esperienza e exit.</td>
+      </tr><tr>
+        <td>2</td>
+        <td>Problem-Solution Fit</td>
+        <td>25%</td>
+        <td>9/10</td>
+        <td style="font-size:.8rem;">Problema identificato chiaramente e soluzione innovativa con feedback molto positivi.</td>
+      </tr><tr>
+        <td>3</td>
+        <td>Product-Market Fit</td>
+        <td>25%</td>
+        <td>9/10</td>
+        <td style="font-size:.8rem;">Prodotto finale testato sul campo, alto NPS e forte potenziale di adozione.</td>
+      </tr><tr>
+        <td>4</td>
+        <td>Traction</td>
+        <td>20%</td>
+        <td>3/10</td>
+        <td style="font-size:.8rem;">Fatturato contenuto e traction iniziale, con margini tra il 20% e il 40%.</td>
+      </tr><tr>
+        <td>5</td>
+        <td>Scalabilità</td>
+        <td>15%</td>
+        <td>3/10</td>
+        <td style="font-size:.8rem;">Margini modesti e necessità di migliorare i processi per scalare il business.</td>
+      </tr>
+  </tbody>
+</table>
+  </div>
+
+  <!-- SUGGERIMENTI (DOPO Allegato A) -->
+  <div class="card">
+    <h2>Suggerimenti elaborati da AI</h2>
+    
+    <!-- Azioni suggerite -->
+    
+    <h3>Azioni suggerite</h3>
+    <div class="timeline">
+      
+        <div class="phase">
+          <span class="phase-dot"></span>
+          <div class="phase-content">
+            <strong>Traction:</strong>
+            Intensificare campagne marketing, Espandere canali vendita<br>
+            <em style="color:#64748b;">Incrementare sforzi marketing per migliorare la traction e aumentare il fatturato mensile.</em>
+          </div>
+        </div>
+    </div>
+    
+    <!-- Roadmap -->
+    
+    <h3 style="margin-top:24px;">Roadmap &amp; Milestone</h3>
+    <div class="timeline">
+      
+        <div class="phase">
+          <span class="phase-dot"></span>
+          <div class="phase-content">
+            <strong>Ottimizzazione margini</strong> · Entro 6 mesi · Alta<br>
+            <em style="color:#64748b;">Migliorare i margini operativi per favorire la scalabilità del modello.</em>
+          </div>
+        </div>
+    </div>
+    
+    <!-- Situazione finanziaria -->
+    
+    <h3 style="margin-top:24px;">Situazione finanziaria</h3>
+    <div style="background:#e8f4ff;border-radius:1rem;padding:18px;display:flex;justify-content:space-around;flex-wrap:wrap;gap:20px;">
+      <div style="text-align:center;min-width:120px;">
+        <div style="font-size:.85rem;color:#555;">Round attuale</div>
+        <div style="font-weight:700;">Rafforzare il round attuale per supportare marketing e sviluppo</div>
+      </div>
+      <div style="text-align:center;min-width:120px;">
+        <div style="font-size:.85rem;color:#555;">Prossimo round</div>
+        <div style="font-weight:700;">Pianificare il prossimo round basato sui KPI raggiunti</div>
+      </div>
+      <div style="text-align:center;min-width:120px;">
+        <div style="font-size:.85rem;color:#555;">Runway</div>
+        <div style="font-weight:700;">Estendere la runway attraverso investimenti mirati</div>
+      </div>
+    </div>
+    <p style="font-size:.9rem;color:#64748b;margin-top:12px;">
+      <em>Rischio principale: incerta crescita delle vendite e margini operativi limitati.</em>
+    </p>
+  </div>
+
+  <!-- DOWNLOAD -->
+  <div class="download-section">
+    <button class="download-btn" onclick="downloadPDF()">Scarica PDF</button>
+  </div>
+
+</div>
+</body>
+</html>
