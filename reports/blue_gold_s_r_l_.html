@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Blue Gold s.r.l. – Report Startup</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --clr-accent:#10b981;        /* verrà sovrascritto via JS */
+  --radius:1rem;
+}
+body{margin:0;font-family:'Inter',sans-serif;background:#f8fafc;color:#1f2937;}
+.container{max-width:800px;margin:2rem auto;padding:0 1rem;}
+.card{background:#fff;border-radius:var(--radius);padding:1.5rem;box-shadow:0 6px 18px rgba(0,0,0,.06);margin-bottom:1.5rem;}
+.bar{height:10px;width:100%;background:#e5e7eb;border-radius:9999px;overflow:hidden;}
+.fill{height:100%;background:var(--clr-accent);}
+.progress-item{display:flex;align-items:center;gap:1rem;margin-top:.75rem;}
+.progress-item label{flex:0 0 220px;font-weight:500;color:#64748b;}
+.badge{background:var(--clr-accent);color:#fff;padding:0.25rem 0.75rem;border-radius:9999px;font-weight:600;display:inline-block;margin-top:.5rem;}
+.swot-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;}
+.swot-box{background:#f1f5f9;border-radius:var(--radius);padding:1rem .9rem;}
+.timeline{display:flex;flex-direction:column;gap:1rem;}
+.phase{display:flex;gap:.75rem;align-items:flex-start;}
+.phase-dot{width:12px;height:12px;background:var(--clr-accent);border-radius:50%;margin-top:5px;flex-shrink:0;}
+.phase-content{font-size:.95rem;}
+table{width:100%;border-collapse:collapse;}
+th,td{padding:.5rem .75rem;border:1px solid #e5e7eb;font-size:.85rem;}
+th{background:#f1f5f9;text-align:left;}
+.download-section{text-align:center;margin-top:2rem;}
+.download-btn{background:var(--clr-accent);color:#fff;border:none;padding:.75rem 1.5rem;border-radius:9999px;font-weight:600;cursor:pointer;}
+.page-break{page-break-before:always;}
+@media print{.download-section{display:none;}}
+</style>
+
+<script>
+/* accent-color e download PDF */
+(function(){
+  const irl = 6;
+  const palette = ['#6B7280','#94A3B8','#60A5FA','#3B82F6','#34D399','#10B981','#14B8A6','#8B5CF6','#7C3AED'];
+  document.documentElement.style.setProperty('--clr-accent', palette[irl-1]||'#3B82F6');
+})();
+function downloadPDF(){window.print();}
+</script>
+</head>
+
+<body>
+<div class="container">
+
+  <!-- LOGO -->
+  <div style="text-align:center;margin-bottom:1.25rem;">
+    <img src="https://giusdeveloper.github.io/Reports_BAC/assets/logo bac.png" alt="Business Angels Club" style="height:200px;object-fit:contain;">
+  </div>
+
+  <!-- HERO -->
+  <div class="card">
+    <h1>Blue Gold s.r.l.</h1>
+    <div class="bar"><div class="fill" style="width:65.5%"></div></div>
+    <p style="font-weight:600;margin-top:.3rem;">65.5/100 – IRL 6</p>
+    <span class="badge">Scale-Up</span>
+    <p style="margin-top:1rem;">Blue Gold offre una piattaforma IoT per il monitoraggio intelligente dell’acqua, garantendo risparmi e sostenibilità. Il team, sebbene composto da un solo founder, ha validato con successo il mercato.</p>
+  </div>
+
+  <!-- SCORE BREAKDOWN -->
+  <div class="card">
+    <h2>Ripartizione Punteggi</h2>
+    <div class="progress-item">
+    <label>Team e Coesione</label>
+    <div class="bar"><div class="fill" style="width:0%"></div></div>
+    <span style="font-weight:600;margin-left:.5rem;">0/10</span>
+  </div><div class="progress-item">
+    <label>Problem-Solution Fit</label>
+    <div class="bar"><div class="fill" style="width:90%"></div></div>
+    <span style="font-weight:600;margin-left:.5rem;">9/10</span>
+  </div><div class="progress-item">
+    <label>Product-Market Fit</label>
+    <div class="bar"><div class="fill" style="width:90%"></div></div>
+    <span style="font-weight:600;margin-left:.5rem;">9/10</span>
+  </div><div class="progress-item">
+    <label>Traction</label>
+    <div class="bar"><div class="fill" style="width:50%"></div></div>
+    <span style="font-weight:600;margin-left:.5rem;">5/10</span>
+  </div><div class="progress-item">
+    <label>Scalabilità</label>
+    <div class="bar"><div class="fill" style="width:70%"></div></div>
+    <span style="font-weight:600;margin-left:.5rem;">7/10</span>
+  </div>
+  </div>
+
+  <!-- SYNTHESIS -->
+  <div class="card">
+    <h2>Analisi di sintesi</h2>
+    <p>Blue Gold s.r.l. si posiziona come realtà innovativa nel settore dello smart water management, con una soluzione che trasforma il monitoraggio dell’acqua in un processo intelligente e continuo. Il sistema, basato su sensori IoT wireless e una piattaforma cloud, consente di rilevare perdite e anomalie in tempo reale, generando dati utili per interventi rapidi e risparmi significativi fino al 30% già nel primo anno. Nonostante il fatto che il team sia composto da un solo founder, l’esperienza decennale e il background da startupper seriale hanno permesso di validare il prodotto attraverso oltre 1.000 installazioni in settori strategici. Il revenue annuo compreso tra 300.000€ e 800.000€ e l’elevato NPS testimoniano una forte accoglienza da parte del mercato, benché la crescita clienti resti moderata. La tecnologia plug & play, la rapidità di installazione e l’approccio end-to-end rappresentano un differenziale competitivo notevole. La roadmap futura include l’espansione commerciale, l’ottimizzazione della piattaforma e l’internazionalizzazione, elementi chiave per consolidare la crescita in un contesto altamente competitivo e in continuo sviluppo.</p>
+  </div>
+
+  <!-- SWOT -->
+  <div class="card">
+    <h2>SWOT</h2>
+    <div class="swot-grid">
+      <div class="swot-box"><strong>Strengths</strong><br>Tecnologia plug & play, installazione rapida, elevata marginalità, forte validazione di mercato.</div>
+      <div class="swot-box"><strong>Weaknesses</strong><br>Team ridotto (solo founder) e crescita clienti lenta.</div>
+      <div class="swot-box"><strong>Opportunities</strong><br>Espansione in settori critici, internazionalizzazione e sviluppo di funzionalità avanzate.</div>
+      <div class="swot-box"><strong>Threats</strong><br>Concorrenza consolidata, dipendenza dal mercato locale e rischi tecnologici.</div>
+    </div>
+  </div>
+
+  <!-- ANNEX A -->
+  <div class="card page-break">
+    <h2>Allegato A – Tabella punteggi dettagliata</h2>
+    <table>
+  <thead>
+    <tr><th>#</th><th>Criterio</th><th>Peso</th><th>Punteggio</th><th>Commento</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>1</td>
+        <td>Team e Coesione</td>
+        <td>15%</td>
+        <td>0/10</td>
+        <td style="font-size:.8rem;">Presente solo il founder, nonostante l’esperienza decennale, questo limita la capacità di crescita del team.</td>
+      </tr><tr>
+        <td>2</td>
+        <td>Problem-Solution Fit</td>
+        <td>25%</td>
+        <td>9/10</td>
+        <td style="font-size:.8rem;">Problema ampiamente validato con oltre 1.000 installazioni e benefici misurabili (risparmio fino al 30% nel primo anno).</td>
+      </tr><tr>
+        <td>3</td>
+        <td>Product-Market Fit</td>
+        <td>25%</td>
+        <td>9/10</td>
+        <td style="font-size:.8rem;">Elevata soddisfazione dei clienti e forte impatto ESG, dimostrando un’aderenza netto al mercato.</td>
+      </tr><tr>
+        <td>4</td>
+        <td>Traction</td>
+        <td>20%</td>
+        <td>5/10</td>
+        <td style="font-size:.8rem;">Il fatturato e le installazioni confermano una trazione iniziale, sebbene la crescita clienti rimanga contenuta.</td>
+      </tr><tr>
+        <td>5</td>
+        <td>Scalabilità</td>
+        <td>15%</td>
+        <td>7/10</td>
+        <td style="font-size:.8rem;">Soluzione plug & play e margini elevati suggeriscono un buon potenziale di scalabilità su mercati multipli.</td>
+      </tr>
+  </tbody>
+</table>
+  </div>
+
+  <!-- SUGGERIMENTI (DOPO Allegato A) -->
+  <div class="card">
+    <h2>Suggerimenti elaborati da AI</h2>
+    
+    <!-- Azioni suggerite -->
+    
+    <h3>Azioni suggerite</h3>
+    <div class="timeline">
+      
+        <div class="phase">
+          <span class="phase-dot"></span>
+          <div class="phase-content">
+            <strong>Traction:</strong>
+            Analizzare metriche di conversione, Ottimizzare campagne marketing<br>
+            <em style="color:#64748b;">Incrementare le attività di marketing per migliorare il tasso di conversione e stimolare la crescita clienti.</em>
+          </div>
+        </div>
+    </div>
+    
+    <!-- Roadmap -->
+    
+    <h3 style="margin-top:24px;">Roadmap &amp; Milestone</h3>
+    <div class="timeline">
+      
+        <div class="phase">
+          <span class="phase-dot"></span>
+          <div class="phase-content">
+            <strong>Espansione in nuovi mercati</strong> · Q3 2024 · Alta<br>
+            <em style="color:#64748b;">L’obiettivo è aumentare fatturato e copertura sfruttando partnership strategiche e internazionalizzazione.</em>
+          </div>
+        </div>
+    </div>
+    
+    <!-- Situazione finanziaria -->
+    
+    <h3 style="margin-top:24px;">Situazione finanziaria</h3>
+    <div style="background:#e8f4ff;border-radius:1rem;padding:18px;display:flex;justify-content:space-around;flex-wrap:wrap;gap:20px;">
+      <div style="text-align:center;min-width:120px;">
+        <div style="font-size:.85rem;color:#555;">Round attuale</div>
+        <div style="font-weight:700;">€500.000</div>
+      </div>
+      <div style="text-align:center;min-width:120px;">
+        <div style="font-size:.85rem;color:#555;">Prossimo round</div>
+        <div style="font-weight:700;">€1.500.000</div>
+      </div>
+      <div style="text-align:center;min-width:120px;">
+        <div style="font-size:.85rem;color:#555;">Runway</div>
+        <div style="font-weight:700;">12 mesi</div>
+      </div>
+    </div>
+    <p style="font-size:.9rem;color:#64748b;margin-top:12px;">
+      <em>Il rischio principale resta il consolidamento della base clienti, nonostante i segnali positivi del mercato.</em>
+    </p>
+  </div>
+
+  <!-- DOWNLOAD -->
+  <div class="download-section">
+    <button class="download-btn" onclick="downloadPDF()">Scarica PDF</button>
+  </div>
+
+</div>
+</body>
+</html>
