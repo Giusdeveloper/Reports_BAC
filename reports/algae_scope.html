@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Algae Scope – Report Startup</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --clr-accent:#10b981;        /* verrà sovrascritto via JS */
+  --radius:1rem;
+}
+body{margin:0;font-family:'Inter',sans-serif;background:#f8fafc;color:#1f2937;}
+.container{max-width:800px;margin:2rem auto;padding:0 1rem;}
+.card{background:#fff;border-radius:var(--radius);padding:1.5rem;box-shadow:0 6px 18px rgba(0,0,0,.06);margin-bottom:1.5rem;}
+.bar{height:10px;width:100%;background:#e5e7eb;border-radius:9999px;overflow:hidden;}
+.fill{height:100%;background:var(--clr-accent);}
+.progress-item{display:flex;align-items:center;gap:1rem;margin-top:.75rem;}
+.progress-item label{flex:0 0 220px;font-weight:500;color:#64748b;}
+.badge{background:var(--clr-accent);color:#fff;padding:0.25rem 0.75rem;border-radius:9999px;font-weight:600;display:inline-block;margin-top:.5rem;}
+.swot-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;}
+.swot-box{background:#f1f5f9;border-radius:var(--radius);padding:1rem .9rem;}
+.timeline{display:flex;flex-direction:column;gap:1rem;}
+.phase{display:flex;gap:.75rem;align-items:flex-start;}
+.phase-dot{width:12px;height:12px;background:var(--clr-accent);border-radius:50%;margin-top:5px;flex-shrink:0;}
+.phase-content{font-size:.95rem;}
+table{width:100%;border-collapse:collapse;}
+th,td{padding:.5rem .75rem;border:1px solid #e5e7eb;font-size:.85rem;}
+th{background:#f1f5f9;text-align:left;}
+.download-section{text-align:center;margin-top:2rem;}
+.download-btn{background:var(--clr-accent);color:#fff;border:none;padding:.75rem 1.5rem;border-radius:9999px;font-weight:600;cursor:pointer;}
+.page-break{page-break-before:always;}
+@media print{.download-section{display:none;}}
+</style>
+
+<script>
+/* accent-color e download PDF */
+(function(){
+  const irl = 5;
+  const palette = ['#6B7280','#94A3B8','#60A5FA','#3B82F6','#34D399','#10B981','#14B8A6','#8B5CF6','#7C3AED'];
+  document.documentElement.style.setProperty('--clr-accent', palette[irl-1]||'#3B82F6');
+})();
+function downloadPDF(){window.print();}
+</script>
+</head>
+
+<body>
+<div class="container">
+
+  <!-- LOGO -->
+  <div style="text-align:center;margin-bottom:1.25rem;">
+    <img src="https://giusdeveloper.github.io/Reports_BAC/assets/logo bac.png" alt="Business Angels Club" style="height:200px;object-fit:contain;">
+  </div>
+
+  <!-- HERO -->
+  <div class="card">
+    <h1>Algae Scope</h1>
+    <div class="bar"><div class="fill" style="width:48%"></div></div>
+    <p style="font-weight:600;margin-top:.3rem;">48/100 – IRL 5</p>
+    <span class="badge">Early Traction</span>
+    <p style="margin-top:1rem;">Startup innovativa che sviluppa rivestimenti 100% biobased per sostituire i PFAS nel settore tessile, con team equilibrato e tecnologia scalabile per rispondere alle esigenze normative e ambientali.</p>
+  </div>
+
+  <!-- SCORE BREAKDOWN -->
+  <div class="card">
+    <h2>Ripartizione Punteggi</h2>
+    <div class="progress-item">
+    <label>Team e Coesione</label>
+    <div class="bar"><div class="fill" style="width:50%"></div></div>
+    <span style="font-weight:600;margin-left:.5rem;">5/10</span>
+  </div><div class="progress-item">
+    <label>Problem-Solution Fit</label>
+    <div class="bar"><div class="fill" style="width:70%"></div></div>
+    <span style="font-weight:600;margin-left:.5rem;">7/10</span>
+  </div><div class="progress-item">
+    <label>Product-Market Fit</label>
+    <div class="bar"><div class="fill" style="width:50%"></div></div>
+    <span style="font-weight:600;margin-left:.5rem;">5/10</span>
+  </div><div class="progress-item">
+    <label>Traction</label>
+    <div class="bar"><div class="fill" style="width:0%"></div></div>
+    <span style="font-weight:600;margin-left:.5rem;">0/10</span>
+  </div><div class="progress-item">
+    <label>Scalabilità</label>
+    <div class="bar"><div class="fill" style="width:70%"></div></div>
+    <span style="font-weight:600;margin-left:.5rem;">7/10</span>
+  </div>
+  </div>
+
+  <!-- SYNTHESIS -->
+  <div class="card">
+    <h2>Analisi di sintesi</h2>
+    <p>Algae Scope è una startup innovativa che si propone di rivoluzionare il settore tessile, nonché i comparti chimico, energetico e manifatturiero, offrendo rivestimenti totalmente biobased in grado di sostituire i PFAS, sostanze chimiche dannose per ambiente e salute. Con un team composto da 3-5 co-founders con un'esperienza di 5-10 anni nel settore, la startup sfrutta competenze complementari per sviluppare una tecnologia in attesa di brevetto, capace di rispondere alla crescente pressione normativa prevista tra il 2025 e il 2030. Il prototipo funzionante ha già ottenuto feedback positivi grazie a esperimenti mensili e test con clienti, pur non avendo ancora generato fatturato. La proposta di valore, fondata sulla produzione scalabile ed economica, consente una facile integrazione nelle infrastrutture esistenti, differenziando Algae Scope dai concorrenti. Il modello di revenue, basato su vendite dirette e royalties, si integra con una strategia di go-to-market orientata verso canali diretti e partnership strategiche, permettendo una rapida acquisizione di clienti. Nonostante le sfide legate all'assenza di operatività commerciale, l'azienda è ben posizionata per capitalizzare il trend verso la sostenibilità e le normative ambientali, mirando a consolidare la propria presenza nel mercato in espansione e a preparare il futuro round di finanziamento.</p>
+  </div>
+
+  <!-- SWOT -->
+  <div class="card">
+    <h2>SWOT</h2>
+    <div class="swot-grid">
+      <div class="swot-box"><strong>Strengths</strong><br>Tecnologia innovativa, produzione scalabile e sostenibile con rivestimenti 100% biobased.</div>
+      <div class="swot-box"><strong>Weaknesses</strong><br>Prima esperienza imprenditoriale e assenza di fatturato iniziale riducono la credibilità.</div>
+      <div class="swot-box"><strong>Opportunities</strong><br>Crescente pressione normativa e trend verso sostenibilità offrono ampie opportunità di mercato.</div>
+      <div class="swot-box"><strong>Threats</strong><br>Concorrenza consolidata e incertezza normativa potrebbero rallentare l'espansione.</div>
+    </div>
+  </div>
+
+  <!-- ANNEX A -->
+  <div class="card page-break">
+    <h2>Allegato A – Tabella punteggi dettagliata</h2>
+    <table>
+  <thead>
+    <tr><th>#</th><th>Criterio</th><th>Peso</th><th>Punteggio</th><th>Commento</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>1</td>
+        <td>Team e Coesione</td>
+        <td>15%</td>
+        <td>5/10</td>
+        <td style="font-size:.8rem;">Team di 3-5 co-founders con esperienza decennale combinata, utile ma prima esperienza startup.</td>
+      </tr><tr>
+        <td>2</td>
+        <td>Problem-Solution Fit</td>
+        <td>25%</td>
+        <td>7/10</td>
+        <td style="font-size:.8rem;">Il problema dei PFAS è ben definito e la soluzione è validata tramite feedback e studi di mercato.</td>
+      </tr><tr>
+        <td>3</td>
+        <td>Product-Market Fit</td>
+        <td>25%</td>
+        <td>5/10</td>
+        <td style="font-size:.8rem;">Il prototipo funziona e i primi test evidenziano feedback positivi, ma mancano metriche di crescita organica.</td>
+      </tr><tr>
+        <td>4</td>
+        <td>Traction</td>
+        <td>20%</td>
+        <td>0/10</td>
+        <td style="font-size:.8rem;">Assenza di fatturato e clienti attivi determina un punteggio nullo nella traction.</td>
+      </tr><tr>
+        <td>5</td>
+        <td>Scalabilità</td>
+        <td>15%</td>
+        <td>7/10</td>
+        <td style="font-size:.8rem;">Tecnologia replicabile e processo scalabile, con potenziale di espansione in diversi mercati.</td>
+      </tr>
+  </tbody>
+</table>
+  </div>
+
+  <!-- SUGGERIMENTI (DOPO Allegato A) -->
+  <div class="card">
+    <h2>Suggerimenti elaborati da AI</h2>
+    
+    <!-- Azioni suggerite -->
+    
+    <h3>Azioni suggerite</h3>
+    <div class="timeline">
+      
+        <div class="phase">
+          <span class="phase-dot"></span>
+          <div class="phase-content">
+            <strong>Traction:</strong>
+            Avviare campagne di marketing digitale mirate, Sperimentare modelli di pricing e offerte promozionali<br>
+            <em style="color:#64748b;">Incrementare la traction per generare interesse e prime vendite.</em>
+          </div>
+        </div>
+    </div>
+    
+    <!-- Roadmap -->
+    
+    <h3 style="margin-top:24px;">Roadmap &amp; Milestone</h3>
+    <div class="timeline">
+      
+        <div class="phase">
+          <span class="phase-dot"></span>
+          <div class="phase-content">
+            <strong>Raggiungere le prime vendite</strong> · Q3 2026 · Alta<br>
+            <em style="color:#64748b;">Definire KPI chiari per validare l'adozione del prodotto.</em>
+          </div>
+        </div>
+    </div>
+    
+    <!-- Situazione finanziaria -->
+    
+    <h3 style="margin-top:24px;">Situazione finanziaria</h3>
+    <div style="background:#e8f4ff;border-radius:1rem;padding:18px;display:flex;justify-content:space-around;flex-wrap:wrap;gap:20px;">
+      <div style="text-align:center;min-width:120px;">
+        <div style="font-size:.85rem;color:#555;">Round attuale</div>
+        <div style="font-weight:700;">Consolidare raccolta attuale</div>
+      </div>
+      <div style="text-align:center;min-width:120px;">
+        <div style="font-size:.85rem;color:#555;">Prossimo round</div>
+        <div style="font-weight:700;">Pianificare il round successivo</div>
+      </div>
+      <div style="text-align:center;min-width:120px;">
+        <div style="font-size:.85rem;color:#555;">Runway</div>
+        <div style="font-weight:700;">Ottimizzare i costi operativi</div>
+      </div>
+    </div>
+    <p style="font-size:.9rem;color:#64748b;margin-top:12px;">
+      <em>Principale rischio è l'assenza di fatturato che potrebbe compromettere il finanziamento futuro.</em>
+    </p>
+  </div>
+
+  <!-- DOWNLOAD -->
+  <div class="download-section">
+    <button class="download-btn" onclick="downloadPDF()">Scarica PDF</button>
+  </div>
+
+</div>
+</body>
+</html>
