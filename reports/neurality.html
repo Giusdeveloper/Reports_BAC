@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Neurality – Report Startup</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --clr-accent:#10b981;        /* verrà sovrascritto via JS */
+  --radius:1rem;
+}
+body{margin:0;font-family:'Inter',sans-serif;background:#f8fafc;color:#1f2937;}
+.container{max-width:800px;margin:2rem auto;padding:0 1rem;}
+.card{background:#fff;border-radius:var(--radius);padding:1.5rem;box-shadow:0 6px 18px rgba(0,0,0,.06);margin-bottom:1.5rem;}
+.bar{height:10px;width:100%;background:#e5e7eb;border-radius:9999px;overflow:hidden;}
+.fill{height:100%;background:var(--clr-accent);}
+.progress-item{display:flex;align-items:center;gap:1rem;margin-top:.75rem;}
+.progress-item label{flex:0 0 220px;font-weight:500;color:#64748b;}
+.badge{background:var(--clr-accent);color:#fff;padding:0.25rem 0.75rem;border-radius:9999px;font-weight:600;display:inline-block;margin-top:.5rem;}
+.swot-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;}
+.swot-box{background:#f1f5f9;border-radius:var(--radius);padding:1rem .9rem;}
+.timeline{display:flex;flex-direction:column;gap:1rem;}
+.phase{display:flex;gap:.75rem;align-items:flex-start;}
+.phase-dot{width:12px;height:12px;background:var(--clr-accent);border-radius:50%;margin-top:5px;flex-shrink:0;}
+.phase-content{font-size:.95rem;}
+table{width:100%;border-collapse:collapse;}
+th,td{padding:.5rem .75rem;border:1px solid #e5e7eb;font-size:.85rem;}
+th{background:#f1f5f9;text-align:left;}
+.download-section{text-align:center;margin-top:2rem;}
+.download-btn{background:var(--clr-accent);color:#fff;border:none;padding:.75rem 1.5rem;border-radius:9999px;font-weight:600;cursor:pointer;}
+.page-break{page-break-before:always;}
+@media print{.download-section{display:none;}}
+</style>
+
+<script>
+/* accent-color e download PDF */
+(function(){
+  const irl = 6;
+  const palette = ['#6B7280','#94A3B8','#60A5FA','#3B82F6','#34D399','#10B981','#14B8A6','#8B5CF6','#7C3AED'];
+  document.documentElement.style.setProperty('--clr-accent', palette[irl-1]||'#3B82F6');
+})();
+function downloadPDF(){window.print();}
+</script>
+</head>
+
+<body>
+<div class="container">
+
+  <!-- LOGO -->
+  <div style="text-align:center;margin-bottom:1.25rem;">
+    <img src="https://drive.google.com/uc?export=view&id=1WF-dlfaz146_9dl5jgVmKaVn69Q5rbKH" alt="Business Angels Club" style="height:64px;object-fit:contain;">
+  </div>
+
+  <!-- HERO -->
+  <div class="card">
+    <h1>Neurality</h1>
+    <div class="bar"><div class="fill" style="width:57%"></div></div>
+    <p style="font-weight:600;margin-top:.3rem;">57/100 – IRL 6</p>
+    <span class="badge">Growth</span>
+    <p style="margin-top:1rem;">Startup innovativa che offre una piattaforma AI per il controllo qualità automatizzato, con referenze significative e potenziale di crescita nel settore manifatturiero.</p>
+  </div>
+
+  <!-- SCORE BREAKDOWN -->
+  <div class="card">
+    <h2>Ripartizione Punteggi</h2>
+    <div class="progress-item">
+    <label>Team e Coesione</label>
+    <div class="bar"><div class="fill" style="width:50%"></div></div>
+    <span style="font-weight:600;margin-left:.5rem;">5/10</span>
+  </div><div class="progress-item">
+    <label>Problem-Solution Fit</label>
+    <div class="bar"><div class="fill" style="width:70%"></div></div>
+    <span style="font-weight:600;margin-left:.5rem;">7/10</span>
+  </div><div class="progress-item">
+    <label>Product-Market Fit</label>
+    <div class="bar"><div class="fill" style="width:70%"></div></div>
+    <span style="font-weight:600;margin-left:.5rem;">7/10</span>
+  </div><div class="progress-item">
+    <label>Traction</label>
+    <div class="bar"><div class="fill" style="width:50%"></div></div>
+    <span style="font-weight:600;margin-left:.5rem;">5/10</span>
+  </div><div class="progress-item">
+    <label>Scalabilità</label>
+    <div class="bar"><div class="fill" style="width:30%"></div></div>
+    <span style="font-weight:600;margin-left:.5rem;">3/10</span>
+  </div>
+  </div>
+
+  <!-- SYNTHESIS -->
+  <div class="card">
+    <h2>Analisi di sintesi</h2>
+    <p>Neurality si presenta come una startup con un eccellente potenziale innovativo nel settore del controllo qualità per l’industria manifatturiera, sfruttando avanzate tecnologie di intelligenza artificiale. La piattaforma permette di identificare difetti e anomalie in tempo reale, contribuendo a ridurre sprechi e costi operativi. Nonostante il team sia agli inizi e con limitata esperienza in startup, la sinergia dei co-founder e la stretta collaborazione in ambito tecnologico garantiscono solide basi per crescere in un mercato altamente competitivo. Il forte interesse dimostrato da clienti di rilievo come Stone Island e Codetex, unito a una validazione positiva dei test con i primi utenti, conferma la validità della soluzione. Tuttavia, il margine lordo attuale inferiore al 20% e alcune difficoltà nel settore tessile rappresentano sfide da superare per assicurare una scalabilità sostenibile e migliorare la redditività nel medio termine.</p>
+  </div>
+
+  <!-- SWOT -->
+  <div class="card">
+    <h2>SWOT</h2>
+    <div class="swot-grid">
+      <div class="swot-box"><strong>Strengths</strong><br>Tecnologia AI all'avanguardia, integrazione rapida e alta adattabilità multi-settore.</div>
+      <div class="swot-box"><strong>Weaknesses</strong><br>Margine lordo ridotto e poca esperienza pregressa nel mondo startup.</div>
+      <div class="swot-box"><strong>Opportunities</strong><br>Espansione in settori manifatturieri e partnership con brand di lusso.</div>
+      <div class="swot-box"><strong>Threats</strong><br>Competizione agguerrita e diffidenza in settori tradizionali.</div>
+    </div>
+  </div>
+
+  <!-- TASKS -->
+  <div class="card">
+    <h2>Compiti prioritari</h2>
+    <div class="timeline">
+      <div class="phase">
+          <span class="phase-dot"></span>
+          <div class="phase-content">
+            <strong>Scalabilità:</strong><br>
+            Rivedere unit economics per aumentare il margine, Ottimizzare processi produttivi per scalabilità
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- ROADMAP & MILESTONES -->
+  <div class="card">
+    <h2>Roadmap & Milestones</h2>
+    <div class="timeline">
+      <div class="phase">
+          <span class="phase-dot"></span>
+          <div class="phase-content">Completamento integrazione con sistemi gestionali</div>
+        </div><div class="phase">
+          <span class="phase-dot"></span>
+          <div class="phase-content">Espansione a nuovi mercati industriali</div>
+        </div>
+      <div class="phase">
+          <span class="phase-dot"></span>
+          <div class="phase-content">Raggiungere 150 clienti attivi</div>
+        </div><div class="phase">
+          <span class="phase-dot"></span>
+          <div class="phase-content">Incrementare margine lordo sopra il 20%</div>
+        </div>
+    </div>
+  </div>
+
+  <!-- FINANCIAL PROJECTIONS -->
+  <div class="card">
+    <h2>Proiezioni & Metriche Chiave</h2>
+    
+    <!-- Revenue Growth -->
+    <div style="margin-bottom:2rem;">
+      <h3>Crescita Revenue</h3>
+      <div class="swot-grid">
+        <div class="swot-box">
+            <strong>2025</strong><br>
+            <span style="font-size:1.2rem;font-weight:600;color:var(--clr-accent);">€300.000</span>
+          </div><div class="swot-box">
+            <strong>2026</strong><br>
+            <span style="font-size:1.2rem;font-weight:600;color:var(--clr-accent);">€500.000</span>
+          </div><div class="swot-box">
+            <strong>2027</strong><br>
+            <span style="font-size:1.2rem;font-weight:600;color:var(--clr-accent);">€800.000</span>
+          </div>
+      </div>
+    </div>
+    
+    <!-- Key Metrics -->
+    <div style="margin-bottom:2rem;">
+      <h3>Metriche Operative</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+        <div class="swot-box">
+            <strong>2025</strong><br>
+            <small>Utenti:</small> <strong>80</strong><br>
+            <small>MRR:</small> <strong>€25k</strong><br>
+            <small>CAC:</small> <strong>€50</strong><br>
+            <small>Churn:</small> <strong>5%</strong>
+          </div><div class="swot-box">
+            <strong>2026</strong><br>
+            <small>Utenti:</small> <strong>150</strong><br>
+            <small>MRR:</small> <strong>€45k</strong><br>
+            <small>CAC:</small> <strong>€50</strong><br>
+            <small>Churn:</small> <strong>5%</strong>
+          </div>
+      </div>
+    </div>
+    
+    <!-- Funding Status -->
+    <div>
+      <h3>Situazione Finanziaria</h3>
+      <div class="swot-box" style="background:#e0f2fe;">
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;text-align:center;">
+          <div>
+            <small>Round Attuale</small><br>
+            <strong>€500.000</strong>
+          </div>
+          <div>
+            <small>Prossimo Round</small><br>
+            <strong style="font-size:0.9rem;">€1 milione</strong>
+          </div>
+          <div>
+            <small>Runway</small><br>
+            <strong>12 mesi</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ANNEX A -->
+  <div class="card page-break">
+    <h2>Allegato A – Tabella punteggi dettagliata</h2>
+    <table>
+  <thead>
+    <tr><th>#</th><th>Criterio</th><th>Peso</th><th>Punteggio</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>Team e Coesione</td><td>15%</td><td>5/10</td></tr><tr><td>2</td><td>Problem-Solution Fit</td><td>25%</td><td>7/10</td></tr><tr><td>3</td><td>Product-Market Fit</td><td>25%</td><td>7/10</td></tr><tr><td>4</td><td>Traction</td><td>20%</td><td>5/10</td></tr><tr><td>5</td><td>Scalabilità</td><td>15%</td><td>3/10</td></tr>
+  </tbody>
+</table>
+  </div>
+
+  <!-- DOWNLOAD -->
+  <div class="download-section">
+    <button class="download-btn" onclick="downloadPDF()">Scarica PDF</button>
+  </div>
+
+</div>
+</body>
+</html>
